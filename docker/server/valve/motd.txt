@@ -1,0 +1,7 @@
+You are playing on UFS Half-Life Server
+This server build is Open Source and runned in Docker
+To get a copy of server, visit our web site at https://hl.ufs.co.ua
+
+Features:
+- Longjump for player at reborn
+- Crossfire siren sound replaced

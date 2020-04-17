@@ -1,0 +1,25 @@
+// Valve Game Info file
+// These are key/value pairs. Certain mods will use different settings.
+
+// General
+game "Half-Life"
+startmap "c0a0"
+trainmap "t0a0"
+mpentity "info_player_deathmatch"
+gamedll "addons/metamod/dlls/metamod.dll"
+gamedll_linux "addons/metamod/dlls/metamod.so"
+gamedll_osx "addons/metamod/dlls/metamod.dylib"
+type "multiplayer_only"
+version "1.6"
+secure "1"
+svonly "0"
+
+// Web
+url_info ""
+url_dl ""
+
+// Else
+cldll "1"
+nomodels "1"
+nohimodel "1"
+hlversion "1111"
