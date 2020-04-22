@@ -1,6 +1,6 @@
 You are playing on UFS Half-Life Server
 This server build is Open Source and runned in Docker
-To get a copy of server, visit our web site at https://hl.ufs.co.ua
+To get a copy of server, visit our web site at https://github.com/zombaksteam/hlds-ufs-server
 
 Features:
 - Longjump for player at reborn
