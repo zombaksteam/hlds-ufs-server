@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Set timezone
+TIME_ZONE=$(cat /etc/timezone)
+export TZ="${TIME_ZONE}"
+
+# Move to server root
+cd /home/steam/server
+
 # Define log file
 LOG_FILE="/home/steam/server/valve/logs/server.log"
 
@@ -23,9 +30,6 @@ if [ ${HLS_ADM_STEAM} != "" ]; then
 	echo "Admin ${HLS_ADM_NAME} ${HLS_ADM_STEAM} added to users!"
 	echo "\"${HLS_ADM_STEAM}\" \"${HLS_ADM_NAME}\" \"bcdefghijklmnopqrstu\" \"ce\"" > /home/steam/server/valve/addons/amxmodx/configs/users.ini
 fi
-
-# Move to server root
-cd /home/steam/server
 
 # Capture and redirect output to log file
 ./hlds_run +ip ${HL_SERVER_IP} \
