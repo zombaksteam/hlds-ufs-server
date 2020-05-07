@@ -1,4 +1,4 @@
-FROM hl-amx-server:latest
+FROM zombaksteam/hl-amx-server:latest
 MAINTAINER zombaksteam <zombaksteam@gmail.com>
 
 ENV HL_SERVER_IP=127.0.0.1 \
@@ -12,8 +12,8 @@ ENV HL_SERVER_IP=127.0.0.1 \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-COPY --chown=steam:steam ./server/valve /home/steam/server/valve
-COPY --chown=steam:steam ./run.sh /home/steam/server/run.sh
+COPY --chown=steam:steam ./docker/server/valve /home/steam/server/valve
+COPY --chown=steam:steam ./docker/run.sh /home/steam/server/run.sh
 
 USER steam
 CMD /home/steam/server/run.sh
