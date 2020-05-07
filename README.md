@@ -2,6 +2,8 @@
 
 This is UFS image for Half-Life 1.6 server
 
+Docker image: [https://hub.docker.com/repository/docker/zombaksteam/hl-ufs-server](https://hub.docker.com/repository/docker/zombaksteam/hl-ufs-server)
+
 ## How to test image
 
 ```bash
