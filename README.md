@@ -15,7 +15,7 @@ docker run --rm \
  -e HLS_ADM_STEAM="STEAM_0:0:12345678" \
  -e HLS_ADM_NAME="AdminNickName" \
  -v /etc/timezone:/etc/timezone:ro \
- -it hl-ufs-server:latest
+ -it zombaksteam/hl-ufs-server:latest
 ```
 
 ## How to run server
@@ -32,7 +32,7 @@ docker run -d \
  -v /etc/timezone:/etc/timezone:ro \
  -v /host-server/logs/hlds/:/home/steam/server/valve/logs/ \
  -v /host-server/logs/amx/:/home/steam/server/valve/addons/amxmodx/logs/ \
- -it hl-ufs-server:latest
+ -it zombaksteam/hl-ufs-server:latest
 ```
 
 ## How to attach to console
